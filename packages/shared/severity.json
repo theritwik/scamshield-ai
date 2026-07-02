@@ -1,0 +1,11 @@
+{
+  "description": "Shared severity bands used by the risk engine (Python) and mirrored in the web UI (lib/risk.ts). Single source of truth for documentation.",
+  "engine_version": "scamshield-risk-engine/1.0.0",
+  "bands": [
+    { "severity": "Low", "min": 0, "max": 24 },
+    { "severity": "Medium", "min": 25, "max": 49 },
+    { "severity": "High", "min": 50, "max": 74 },
+    { "severity": "Critical", "min": 75, "max": 100 }
+  ],
+  "decision_threshold": 50
+}

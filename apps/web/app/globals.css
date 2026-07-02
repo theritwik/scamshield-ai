@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-950: #060d1f;
+  --color-navy-900: #0a1428;
+  --color-navy-850: #0e1b36;
+  --color-navy-800: #132244;
+  --color-navy-700: #1c3059;
+  --color-navy-600: #2a4374;
+  --color-ink-100: #e8eefc;
+  --color-ink-300: #b9c6e3;
+  --color-ink-500: #7e90b8;
+  --color-alert-600: #e02d3c;
+  --color-alert-700: #b91c2c;
+  --color-warn-500: #f59e0b;
+  --color-safe-500: #22c55e;
+  --color-accent-400: #4f8ef7;
+  --color-accent-500: #2f6fe4;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--color-navy-950);
+  color: var(--color-ink-100);
+}
+
+.card {
+  @apply bg-navy-900 border border-navy-700/60 rounded-xl;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg bg-accent-500 hover:bg-accent-400 text-white font-semibold px-4 py-2.5 transition-colors disabled:opacity-40 disabled:cursor-not-allowed;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg border border-navy-600 hover:border-accent-400 text-ink-100 font-medium px-4 py-2.5 transition-colors disabled:opacity-40;
+}
+
+.btn-danger {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg bg-alert-600 hover:bg-alert-700 text-white font-bold px-4 py-2.5 transition-colors;
+}
+
+.input {
+  @apply w-full rounded-lg bg-navy-850 border border-navy-700 px-3 py-2.5 text-ink-100 placeholder-ink-500 focus:outline-none focus:border-accent-400;
+}
+
+.label {
+  @apply block text-xs font-semibold uppercase tracking-wider text-ink-500 mb-1.5;
+}
+
+@keyframes pulse-alert {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(224, 45, 60, 0.55); }
+  50% { box-shadow: 0 0 0 14px rgba(224, 45, 60, 0); }
+}
+.pulse-alert { animation: pulse-alert 1.6s ease-in-out infinite; }
+
+@keyframes skeleton {
+  0% { opacity: 0.45; }
+  50% { opacity: 0.9; }
+  100% { opacity: 0.45; }
+}
+.skeleton {
+  @apply bg-navy-800 rounded-lg;
+  animation: skeleton 1.4s ease-in-out infinite;
+}

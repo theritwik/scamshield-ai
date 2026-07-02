@@ -1,0 +1,27 @@
+services:
+  api:
+    build: ./apps/api
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite:////data/scamshield.db
+      - CORS_ORIGINS=http://localhost:3000
+      - SCAMSHIELD_UPLOAD_DIR=/data/uploads
+      - SCAMSHIELD_REPORT_DIR=/data/reports
+    volumes:
+      - api-data:/data
+      - ./data:/repo-data:ro
+      - ./scripts:/scripts:ro
+
+  web:
+    build:
+      context: ./apps/web
+      args:
+        NEXT_PUBLIC_API_URL: http://localhost:8000
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
+
+volumes:
+  api-data:
