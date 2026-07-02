@@ -1,0 +1,188 @@
+{
+  "description": "Entirely synthetic labelled conversations for evaluating ScamShield AI. label=1 means scam/fraudulent coercion, label=0 means legitimate. No real persons, numbers or accounts.",
+  "conversations": [
+    {
+      "id": "scam-da-01", "label": 1, "family": "digital_arrest",
+      "messages": [
+        {"speaker": "caller", "text": "I am calling from TRAI, your Aadhaar has been linked to an illegal parcel."},
+        {"speaker": "caller", "text": "Transferring your call to CBI officer Rathi. A money laundering case is registered against you."},
+        {"speaker": "caller", "text": "Do not tell your family. This is a confidential investigation."},
+        {"speaker": "caller", "text": "Do not disconnect this video call. You are under digital arrest."},
+        {"speaker": "caller", "text": "Transfer ₹50,000 to the safe RBI verification account immediately."}
+      ]
+    },
+    {
+      "id": "scam-da-02", "label": 1, "family": "digital_arrest",
+      "messages": [
+        {"speaker": "caller", "text": "This is Mumbai Police cyber cell. A parcel with drugs was intercepted in your name."},
+        {"speaker": "victim", "text": "That is impossible, I never sent any parcel."},
+        {"speaker": "caller", "text": "An arrest warrant has been issued. You will be arrested tonight unless you cooperate."},
+        {"speaker": "caller", "text": "Go to a separate room, stay alone and keep your camera on."},
+        {"speaker": "caller", "text": "Deposit the verification amount of 2 lakh to account 912345678901 right now."}
+      ]
+    },
+    {
+      "id": "scam-da-03", "label": 1, "family": "digital_arrest_hindi",
+      "messages": [
+        {"speaker": "caller", "text": "मैं सीबीआई अधिकारी बोल रहा हूं। आपके आधार से अवैध पार्सल जुड़ा है।"},
+        {"speaker": "caller", "text": "आपके खिलाफ मनी लॉन्ड्रिंग का केस दर्ज है। गिरफ्तारी का वारंट जारी है।"},
+        {"speaker": "caller", "text": "किसी को मत बताना। यह गुप्त जांच है। अलग कमरे में जाइए।"},
+        {"speaker": "caller", "text": "वीडियो कॉल मत काटिए। आप डिजिटल अरेस्ट में हैं।"},
+        {"speaker": "caller", "text": "तुरंत 50000 रुपये सेफ अकाउंट में ट्रांसफर करें।"}
+      ]
+    },
+    {
+      "id": "scam-da-04", "label": 1, "family": "digital_arrest",
+      "messages": [
+        {"speaker": "caller", "text": "Customs department here. Your parcel to Taiwan was seized with illegal passports."},
+        {"speaker": "caller", "text": "Your SIM card was used for hawala transactions. This is a national security matter, keep it secret."},
+        {"speaker": "caller", "text": "Remain on the call. You are under video surveillance until cleared."},
+        {"speaker": "caller", "text": "Pay the clearance deposit to cbi.clearance@ptyes now or face non-bailable arrest."}
+      ]
+    },
+    {
+      "id": "scam-da-05", "label": 1, "family": "digital_arrest",
+      "messages": [
+        {"speaker": "caller", "text": "This is the Enforcement Directorate. Your PAN card was used in money laundering worth 3 crore."},
+        {"speaker": "caller", "text": "Do not involve your family, they will also be arrested."},
+        {"speaker": "caller", "text": "Your bank accounts will be frozen within the hour."},
+        {"speaker": "caller", "text": "Move your savings to the supervised government account for safe keeping. Transfer Rs 4,00,000 immediately."},
+        {"speaker": "caller", "text": "After payment, delete this chat and the call recording."}
+      ]
+    },
+    {
+      "id": "scam-kyc-01", "label": 1, "family": "kyc_phishing",
+      "messages": [
+        {"speaker": "caller", "text": "Dear customer, your account will be blocked in 2 hours. Complete KYC immediately: http://kyc-update.example-fraud.in"}
+      ]
+    },
+    {
+      "id": "scam-kyc-02", "label": 1, "family": "kyc_phishing",
+      "messages": [
+        {"speaker": "caller", "text": "Your PAN is not linked. Account will be suspended today."},
+        {"speaker": "caller", "text": "Click the link and enter the OTP you receive to keep your account active: http://pan-link.example-fraud.in"}
+      ]
+    },
+    {
+      "id": "scam-remote-01", "label": 1, "family": "remote_access",
+      "messages": [
+        {"speaker": "caller", "text": "I am calling from your bank's security department, suspicious activity was found on your card."},
+        {"speaker": "caller", "text": "Install AnyDesk and share your screen so I can secure your account."},
+        {"speaker": "caller", "text": "Now tell me the OTP you received to verify your identity."}
+      ]
+    },
+    {
+      "id": "scam-remote-02", "label": 1, "family": "remote_access",
+      "messages": [
+        {"speaker": "caller", "text": "Your electricity bill is unpaid, power will be disconnected tonight."},
+        {"speaker": "caller", "text": "Download TeamViewer QuickSupport immediately and give me the code."},
+        {"speaker": "caller", "text": "Share the OTP now to stop the disconnection."}
+      ]
+    },
+    {
+      "id": "scam-upi-01", "label": 1, "family": "payment_fraud",
+      "messages": [
+        {"speaker": "caller", "text": "Congratulations, you won the lucky draw of ₹5 lakh."},
+        {"speaker": "caller", "text": "To claim, first pay the processing fee. Scan this QR and send Rs 4,999 immediately."},
+        {"speaker": "caller", "text": "Have you sent it? Confirm the payment screenshot."}
+      ]
+    },
+    {
+      "id": "scam-da-06", "label": 1, "family": "digital_arrest",
+      "messages": [
+        {"speaker": "caller", "text": "FedEx courier verification. Your parcel contains contraband and was flagged by Narcotics Control Bureau."},
+        {"speaker": "caller", "text": "I am connecting the line to NCB headquarters. Officer Verma will speak to you."},
+        {"speaker": "caller", "text": "This investigation is classified. Do not discuss this call with anyone."},
+        {"speaker": "caller", "text": "You must remain on camera. Under Section 108 you are digitally arrested."},
+        {"speaker": "caller", "text": "Immediately remit the bond amount of ₹1,20,000 to the verification account or the arrest team will reach your home."}
+      ]
+    },
+    {
+      "id": "scam-da-07", "label": 1, "family": "digital_arrest_hindi",
+      "messages": [
+        {"speaker": "caller", "text": "मैं दिल्ली पुलिस से बोल रहा हूं। आपके नाम पर एक सिम अपराध में इस्तेमाल हुआ है।"},
+        {"speaker": "caller", "text": "यह बहुत गंभीर मामला है। परिवार से बात मत कीजिए।"},
+        {"speaker": "caller", "text": "कैमरे पर बने रहिए, आप निगरानी में हैं।"},
+        {"speaker": "caller", "text": "अभी 80000 रुपये भेजिए वरना गिरफ्तारी होगी।"}
+      ]
+    },
+    {
+      "id": "scam-otp-01", "label": 1, "family": "otp_fraud",
+      "messages": [
+        {"speaker": "caller", "text": "Sir, I accidentally sent my money to your Paytm. Please help me."},
+        {"speaker": "caller", "text": "Just read out the OTP that came to your phone and the refund will process."},
+        {"speaker": "caller", "text": "Hurry, the transaction window closes in 5 minutes."}
+      ]
+    },
+    {
+      "id": "legit-bank-01", "label": 0, "family": "bank_awareness",
+      "messages": [
+        {"speaker": "caller", "text": "Dear customer, your bank will never ask for your OTP, PIN or CVV. Never share banking details with anyone. Beware of fraudsters. Stay safe."}
+      ]
+    },
+    {
+      "id": "legit-bank-02", "label": 0, "family": "bank_alert",
+      "messages": [
+        {"speaker": "caller", "text": "Alert: Rs 2,500 was spent on your card ending 4821 at BigBasket on 12-Jun. If this was not you, call the number on the back of your card."}
+      ]
+    },
+    {
+      "id": "legit-bank-03", "label": 0, "family": "bank_awareness_hindi",
+      "messages": [
+        {"speaker": "caller", "text": "प्रिय ग्राहक, बैंक कभी ओटीपी या पिन नहीं मांगता। किसी के साथ बैंकिंग जानकारी साझा न करें। सावधान रहें।"}
+      ]
+    },
+    {
+      "id": "legit-family-01", "label": 0, "family": "personal",
+      "messages": [
+        {"speaker": "caller", "text": "Hi, are we still meeting for lunch tomorrow at 1pm?"},
+        {"speaker": "victim", "text": "Yes, see you at the usual place."}
+      ]
+    },
+    {
+      "id": "legit-family-02", "label": 0, "family": "personal",
+      "messages": [
+        {"speaker": "caller", "text": "Beta, transfer me Rs 2,000 for the electricity bill when you get time. No hurry."},
+        {"speaker": "victim", "text": "Sure Papa, will do it tonight."}
+      ]
+    },
+    {
+      "id": "legit-delivery-01", "label": 0, "family": "delivery",
+      "messages": [
+        {"speaker": "caller", "text": "Your Amazon parcel is out for delivery and will arrive today by 6pm."}
+      ]
+    },
+    {
+      "id": "legit-work-01", "label": 0, "family": "work",
+      "messages": [
+        {"speaker": "caller", "text": "Please send the quarterly report by Friday. The client meeting moved to Monday."},
+        {"speaker": "victim", "text": "Noted, I will share it by Thursday evening."}
+      ]
+    },
+    {
+      "id": "legit-police-01", "label": 0, "family": "official",
+      "messages": [
+        {"speaker": "caller", "text": "This is a reminder from the traffic department. Your challan for signal jumping is pending. You may pay it on the official parivahan.gov.in portal or contest it in court."}
+      ]
+    },
+    {
+      "id": "legit-bank-04", "label": 0, "family": "bank_service",
+      "messages": [
+        {"speaker": "caller", "text": "Good morning, this is regarding your home loan application. Your documents were received. The branch will contact you for verification at your convenience."}
+      ]
+    },
+    {
+      "id": "legit-recharge-01", "label": 0, "family": "telecom",
+      "messages": [
+        {"speaker": "caller", "text": "Your mobile plan expires on 15-Jul. Recharge with your usual pack anytime through the official app."}
+      ]
+    },
+    {
+      "id": "legit-friend-01", "label": 0, "family": "personal",
+      "messages": [
+        {"speaker": "caller", "text": "Bro, I saw a news story about digital arrest scams. Crazy how they impersonate CBI officers and demand money on video calls."},
+        {"speaker": "victim", "text": "Yeah, my uncle got one of those calls. He hung up immediately."}
+      ]
+    }
+  ]
+}

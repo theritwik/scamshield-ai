@@ -1,0 +1,85 @@
+{
+  "dataset": {
+    "path": "data/evaluation/labelled_conversations.json",
+    "conversations": 24,
+    "scam": 13,
+    "legitimate": 11,
+    "note": "Entirely synthetic data; no real victims or identifiers."
+  },
+  "generated_at": "2026-07-02T13:06:03Z",
+  "results": {
+    "keyword_baseline": {
+      "detector": "keyword_baseline",
+      "threshold": 50.0,
+      "confusion_matrix": {
+        "tp": 8,
+        "fp": 1,
+        "tn": 10,
+        "fn": 5
+      },
+      "precision": 0.889,
+      "recall": 0.615,
+      "f1": 0.727,
+      "false_positive_rate": 0.091,
+      "avg_detection_message": 2.88,
+      "detected_before_payment_pct": 50.0,
+      "avg_latency_ms": 0.01,
+      "misclassified": [
+        {
+          "id": "scam-kyc-02",
+          "type": "false_negative",
+          "score": 18
+        },
+        {
+          "id": "scam-remote-01",
+          "type": "false_negative",
+          "score": 36
+        },
+        {
+          "id": "scam-upi-01",
+          "type": "false_negative",
+          "score": 18
+        },
+        {
+          "id": "scam-da-07",
+          "type": "false_negative",
+          "score": 36
+        },
+        {
+          "id": "scam-otp-01",
+          "type": "false_negative",
+          "score": 18
+        },
+        {
+          "id": "legit-friend-01",
+          "type": "false_positive",
+          "score": 72
+        }
+      ]
+    },
+    "hybrid_sequence_engine": {
+      "detector": "hybrid",
+      "threshold": 50.0,
+      "confusion_matrix": {
+        "tp": 12,
+        "fp": 0,
+        "tn": 11,
+        "fn": 1
+      },
+      "precision": 1.0,
+      "recall": 0.923,
+      "f1": 0.96,
+      "false_positive_rate": 0.0,
+      "avg_detection_message": 3.17,
+      "detected_before_payment_pct": 58.3,
+      "avg_latency_ms": 0.34,
+      "misclassified": [
+        {
+          "id": "scam-kyc-01",
+          "type": "false_negative",
+          "score": 40.0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+*.db
+apps/api/uploads/
+apps/api/reports/
+node_modules/
+.next/
+.env
+.env.local
+dist/
